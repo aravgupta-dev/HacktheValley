@@ -12,11 +12,6 @@ Prepare your system and run a Streamlit application related to the `farm-ng` pro
 
 ### Install pip3 & Virtualenv
 
-**For Linux:**
-```bash
-sudo apt-get install python3-pip
-sudo pip3 install virtualenv
-```
 
 **For MacOS:**
 - Ensure Python 3 and pip are installed. MacOS comes with Python 2.7 installed by default, you may need to install Python 3.x from the Python website or via Homebrew.
@@ -90,9 +85,17 @@ pip3 install farm-ng-amiga --upgrade
      pip install -e .[dev]
      ```
 
-## Returning to the Streamlit Application Setup
-After preparing your environment and managing the `farm-ng` package installations, follow the initial guide for navigating to the Streamlit application directory and running the application.
+## Navigate and Run Streamlit App
+1. Navigate to the Streamlit application directory:`farm-ng-amiga`
+   ```bash
+   cd py/examples/track_planner/
+   ```
+2. Run the StreamLit Application:
+   ```bash
+   streamlit run streamlit.py
+   ```
+3. HAVE FUN! 
+   
 
 ## Final Steps
-- Navigate to the Streamlit application directory and run the application as previously outlined.
 - Ensure all dependencies mentioned earlier are installed in your activated virtual environment.
