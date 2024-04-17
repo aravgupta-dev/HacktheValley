@@ -110,8 +110,8 @@ These instructions ensure that users with no prior Python installation can set u
 - Exit: `deactivate`
 - Re-enter (ensure you're in the directory containing `venv/`): `source venv/bin/activate`
 
-## Package Installation
-
+## Package Installation for Windows  
+  -please make sure to deactivate or kill your virtual envrionment before starting this step. 
 ### Install Required Packages
 Ensure your pip and setuptools are up-to-date:
 ```bash
@@ -139,7 +139,9 @@ pip3 install farm-ng-core --upgrade
 pip3 install farm-ng-amiga --upgrade
 ```
 
-## Install from Source [Advanced]
+## Package Installation for Mac
+  -please make sure to deactivate or kill your virtual envrionment before starting this step. 
+  
 1. Clone the `farm-ng-amiga` repository:
    ```bash
    git clone https://github.com/farm-ng/farm-ng-amiga.git
@@ -150,6 +152,30 @@ pip3 install farm-ng-amiga --upgrade
    ```bash
    cd farm-ng-amiga/
    ```
+3. Checkout the correct release and update submodulesBuild and install the package:
+   - For a standard installation:
+     ```bash
+      git checkout v2.0.0
+     ```
+4. Checkout the correct release and update submodules
+   - For a standard installation:
+     ```bash
+      git submodule update --init --recursive
+     ```
+
+4. Activate your virtual enviornment
+   - For a standard installation:
+     ```bash
+      source venv/bin/activate
+     ``` 
+    
+     
+4. Checkout the correct release and update submodules
+   - For a standard installation:
+     ```bash
+      cd ../
+     ``` 
+    
 3. Build and install the package:
    - For a standard installation:
      ```bash
