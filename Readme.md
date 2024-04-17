@@ -11,7 +11,7 @@ Prepare your system and run a Streamlit application related to the `AMIGA`, util
   ### For MacOS:
 
 
-### 2. Install Homebrew
+### 1. Install Homebrew
 - Install homebrew using:
   ```bash
   /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
@@ -119,11 +119,7 @@ pip install --upgrade pip
 pip install --upgrade setuptools
 ```
 
-**For Linux & MacOS:**
-Install `farm-ng-amiga`:
-```bash
-pip3 install farm-ng-amiga
-```
+
 
 ## Check Installed Version
 You should see this as a result :
@@ -153,38 +149,45 @@ pip3 install farm-ng-amiga --upgrade
    cd farm-ng-amiga/
    ```
 3. Checkout the correct release and update submodulesBuild and install the package:
-   - For a standard installation:
      ```bash
       git checkout v2.0.0
      ```
 4. Checkout the correct release and update submodules
-   - For a standard installation:
      ```bash
       git submodule update --init --recursive
      ```
 
 4. Activate your virtual enviornment
-   - For a standard installation:
      ```bash
       source venv/bin/activate
      ``` 
     
      
-4. Checkout the correct release and update submodules
-   - For a standard installation:
+4. Navigate to the farm-ng directory within your virtual enviornment
      ```bash
-      cd ../
+      cd farm-ng-core/
+
      ``` 
     
-3. Build and install the package:
-   - For a standard installation:
+5. Build and install these packages:
      ```bash
      pip install .
+     pip install --upgrade pip
+     pip install --upgrade setuptools wheel
+     pip install --no-build-isolation farm-ng-amiga
      ```
-   - For development mode:
-     ```bash
-     pip install -e .[dev]
-     ```
+ 6. Check if you have installed the packages correctly
+    -run this command:
+      ```bash
+      pip list | grep -E 'farm-ng|farm_ng'
+       ``` 
+      You should see something like:
+      ```bash
+         farm-ng-amiga      2.0.0
+         farm-ng-core       2.0.0
+         farm-ng-package    0.1.3
+       ``` 
+         
 
 ## Navigate and Run Streamlit App
 1. Navigate to the Streamlit application directory:`farm-ng-amiga`
