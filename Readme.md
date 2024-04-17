@@ -14,7 +14,7 @@ Prepare your system and run a Streamlit application related to the `AMIGA`, util
 ### 1. Install Homebrew
 - Install homebrew using:
   ```bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+  /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
   ```
 
 ### 1. Install Python 3
@@ -61,26 +61,37 @@ If Python and pip are not installed:
   .\venv\Scripts\activate
   ```
 
+## Creating and Activating a Virtual Environment on Mac:
+
+### 1. Navigate to the directory where you want your virtual environment
+- Open Command Prompt and change directory to where you want the virtual environment to be set up.
+
+### 2. Create the virtual environment
+- Run:
+  ```cmd
+  python -m venv venv
+  ```
+
+### 3. Activate the virtual environment
+- To activate the virtual environment, execute:
+  ```cmd
+  source venv/bin/activate
+  ```
+
+
+
 ## [Optional] Exiting or Re-entering Your Virtual Environment on Windows:
 - **Exit**: Run `deactivate` in your Command Prompt.
 - **Re-enter**: Make sure you're in the directory containing `venv/` and run:
   ```cmd
   .\venv\Scripts\activate
   ```
+  or for Mac
+  ```cmd
+  source venv/bin/activate
+  ```
 
 These instructions ensure that users with no prior Python installation can set up their environment correctly on both MacOS and Windows.
-
-### Start a Virtual Environment
-1. Navigate to the directory where you want your virtual environment to reside.
-2. Create the virtual environment:
-   ```bash
-   python3 -m venv venv
-   ```
-3. Activate the virtual environment:
-   ```bash
-   source venv/bin/activate
-   ```
-   
 **[Optional]** To exit or re-enter your virtual environment:
 - Exit: `deactivate`
 - Re-enter (ensure you're in the directory containing `venv/`): `source venv/bin/activate`
