@@ -11,13 +11,27 @@ Prepare your system and run a Streamlit application related to the `AMIGA`, util
   ### For MacOS:
 
 
-### 1. Install Homebrew
+### 2. Install Homebrew
 - Install homebrew using:
   ```bash
   /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
   ```
+  - If homebrew is not working use these two commands:
+  ```bash
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/aravgupta/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  ```
+ - Verify Homebrew Installation:
+  ```bash
+  brew doctor
+  ```
+   - Or Verify Homebrew Installation:
+     Open your Terminal and enter the following command to see if Homebrew is installed in the expected location:
+  ```bash
+  /opt/homebrew/bin/brew --version
+  ```
 
-### 1. Install Python 3
+### 3. Install Python 3
 - Visit the official Python website (https://www.python.org/downloads/) to download and install Python 3 for MacOS. This installation will also include `pip`.
 - Alternatively, you can install Python using Homebrew by running:
   ```bash
@@ -112,7 +126,7 @@ pip3 install farm-ng-amiga
 ```
 
 ## Check Installed Version
-Verify the installed versions of `farm-ng` packages:
+You should see this as a result :
 ```bash
 pip list | grep -E 'farm-ng|farm_ng'
 ```
