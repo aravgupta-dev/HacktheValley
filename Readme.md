@@ -70,16 +70,6 @@ If Python and pip are not installed:
 
 These instructions ensure that users with no prior Python installation can set up their environment correctly on both MacOS and Windows.
 
-### Install pip3 & Virtualenv
-
-
-**For MacOS:**
-- Ensure Python 3 and pip are installed. MacOS comes with Python 2.7 installed by default, you may need to install Python 3.x from the Python website or via Homebrew.
-- Install virtualenv using pip3:
-  ```bash
-  sudo pip3 install virtualenv
-  ```
-
 ### Start a Virtual Environment
 1. Navigate to the directory where you want your virtual environment to reside.
 2. Create the virtual environment:
