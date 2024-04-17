@@ -2,20 +2,20 @@
 # Streamlit Application Setup Guide for `farm-ng`
 
 ## Objective
-Prepare your system and run a Streamlit application related to the `farm-ng` project, utilizing best practices in Python environment management.
+Prepare your system and run a Streamlit application related to the `AMIGA`, utilizing best practices in Python environment management.
 
-## Prerequisites
-- Basic knowledge of terminal/command line usage.
-- Git and Python installed on your system.
+# Setup Environment
 
-## Setup Environment
+## Installation Guide for Python and virtualenv
 
-# Installation Guide for Python and virtualenv
+  ### For MacOS:
 
-  ## For MacOS:
 
-### Prerequisites
-If Python 3 and pip are not installed:
+### 1. Install Homebrew
+- Install homebrew using:
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+  ```
 
 ### 1. Install Python 3
 - Visit the official Python website (https://www.python.org/downloads/) to download and install Python 3 for MacOS. This installation will also include `pip`.
@@ -25,7 +25,7 @@ If Python 3 and pip are not installed:
   ```
 
 ### 2. Install virtualenv
-- Once Python 3 and pip are installed, you can install `virtualenv` using pip3:
+- After installing Python, you can create a virtual environment to manage your project's dependencies separately from the system's Python. You can do this with:
   ```bash
   sudo pip3 install virtualenv
   ```
