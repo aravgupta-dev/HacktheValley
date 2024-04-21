@@ -58,22 +58,6 @@ If Python and pip are not installed:
   pip install virtualenv
   ```
 
-## Creating and Activating a Virtual Environment on Windows:
-
-### 1. Navigate to the directory where you want your virtual environment
-- Open Command Prompt and change directory to where you want the virtual environment to be set up.
-
-### 2. Create the virtual environment
-- Run:
-  ```cmd
-  python -m venv venv
-  ```
-
-### 3. Activate the virtual environment
-- To activate the virtual environment, execute:
-  ```cmd
-  .\venv\Scripts\activate
-  ```
 
 ## Creating and Activating a Virtual Environment on Mac:
 
@@ -92,7 +76,28 @@ If Python and pip are not installed:
   source venv/bin/activate
   ```
 
+**[Optional]** To exit or re-enter your virtual environment:
+- Exit: `deactivate`
+- Re-enter (ensure you're in the directory containing `venv/`): `source venv/bin/activate`
 
+
+
+## Creating and Activating a Virtual Environment on Windows:
+
+### 1. Navigate to the directory where you want your virtual environment
+- Open Command Prompt and change directory to where you want the virtual environment to be set up.
+
+### 2. Create the virtual environment
+- Run:
+  ```cmd
+  python -m venv venv
+  ```
+
+### 3. Activate the virtual environment
+- To activate the virtual environment, execute:
+  ```cmd
+  .\venv\Scripts\activate
+  ```
 
 ## [Optional] Exiting or Re-entering Your Virtual Environment on Windows:
 - **Exit**: Run `deactivate` in your Command Prompt.
@@ -100,40 +105,6 @@ If Python and pip are not installed:
   ```cmd
   .\venv\Scripts\activate
   ```
-  or for Mac
-  ```cmd
-  source venv/bin/activate
-  ```
-
-These instructions ensure that users with no prior Python installation can set up their environment correctly on both MacOS and Windows.
-**[Optional]** To exit or re-enter your virtual environment:
-- Exit: `deactivate`
-- Re-enter (ensure you're in the directory containing `venv/`): `source venv/bin/activate`
-
-## Package Installation for Windows  
-  -please make sure to deactivate or kill your virtual envrionment before starting this step. 
-### Install Required Packages
-Ensure your pip and setuptools are up-to-date:
-```bash
-pip install --upgrade pip
-pip install --upgrade setuptools
-```
-
-
-
-## Check Installed Version
-You should see this as a result :
-```bash
-pip list | grep -E 'farm-ng|farm_ng'
-```
-
-## Package Updates
-Keep your `farm-ng` packages up to date:
-```bash
-pip3 install farm-ng-package --upgrade
-pip3 install farm-ng-core --upgrade
-pip3 install farm-ng-amiga --upgrade
-```
 
 ## Package Installation for Mac
   -please make sure to deactivate or kill your virtual envrionment before starting this step. 
@@ -150,7 +121,7 @@ pip3 install farm-ng-amiga --upgrade
    ```
 3. Checkout the correct release and update submodulesBuild and install the package:
      ```bash
-      git checkout v2.0.0
+      git checkout v2.2.0
      ```
 4. Checkout the correct release and update submodules
      ```bash
@@ -188,6 +159,34 @@ pip3 install farm-ng-amiga --upgrade
          farm-ng-package    0.1.3
        ``` 
          
+
+
+## Package Installation for Windows  
+  -please make sure to deactivate or kill your virtual envrionment before starting this step. 
+### Install Required Packages
+Ensure your pip and setuptools are up-to-date:
+```bash
+pip install --upgrade pip
+pip install --upgrade setuptools
+```
+
+
+
+## Check Installed Version
+You should see this as a result :
+```bash
+pip list | grep -E 'farm-ng|farm_ng'
+```
+
+## Package Updates
+Keep your `farm-ng` packages up to date:
+```bash
+pip3 install farm-ng-package --upgrade
+pip3 install farm-ng-core --upgrade
+pip3 install farm-ng-amiga --upgrade
+```
+
+
 
 ## Navigate and Run Streamlit App
 1. Navigate to the Streamlit application directory:`farm-ng-amiga`
