@@ -146,6 +146,7 @@ If Python and pip are not installed:
      pip install --upgrade pip
      pip install --upgrade setuptools wheel
      pip install --no-build-isolation farm-ng-amiga
+     pip install sreamlit
      ```
  6. Check if you have installed the packages correctly
     -run this command:
