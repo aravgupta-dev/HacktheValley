@@ -86,16 +86,20 @@ Python is essential for running Python-based applications like Streamlit.
    ```
 
 ## Step 6: Run Streamlit Application
-1. Navigate to the Streamlit application directory within the repository:
+1. Install Streamlit with:
+   ```bash
+   pip install streamlit
+   ```
+2. Navigate to the Streamlit application directory within the repository:
    ```bash
    cd py/examples/track_planner/
    ```
-2. Run the Streamlit application:
+3. Run the Streamlit application:
    ```bash
-   streamlit run streamlit.py
+   streamlit run track_planner.py
    ```
-3. Access the Streamlit application in your web browser at `http://localhost:8501`.
-4. To stop the app use:
+4. Access the Streamlit application in your web browser at `http://localhost:8501`.
+5. To stop the app use:
    ```bash
    control+d
    ```
@@ -106,3 +110,7 @@ Python is essential for running Python-based applications like Streamlit.
 - If you encounter errors during installation, ensure your internet connection is stable, and retry the commands.
 - For specific error messages, consult the documentation or seek help from Stack Overflow or similar forums.
 
+## Tips and Guides
+For more information on how to build your own track head over to these links:
+- https://amiga.farm-ng.com/docs/brain/brain-install/
+- https://amiga.farm-ng.com/docs/concepts/tracks_and_waypoints/
