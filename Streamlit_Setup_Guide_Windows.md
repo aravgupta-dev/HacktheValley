@@ -80,9 +80,9 @@ Python is essential for running Python-based applications like Streamlit.
    streamlit run streamlit.py
    ```
 4. Access the Streamlit application in your web browser at `http://localhost:8501`.
-5. To stop the app hit:
+5. To stop the app use:
    ```cmd
-   control d
+   control+d
    ```
    in the terminal
 
