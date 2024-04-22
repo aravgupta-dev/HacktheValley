@@ -77,9 +77,10 @@ Python is essential for running Python-based applications like Streamlit.
    ```
 3. Run the Streamlit application:
    ```cmd
-   streamlit run streamlit.py
+   streamlit run track_planner.py
    ```
 4. Access the Streamlit application in your web browser at `http://localhost:8501`.
+   
 5. To stop the app use:
    ```cmd
    control+d
@@ -90,4 +91,10 @@ Python is essential for running Python-based applications like Streamlit.
 - Ensure all commands are run within the virtual environment.
 - If you encounter errors during installation, ensure your internet connection is stable, and retry the commands.
 - For specific error messages, consult the documentation or seek help from Stack Overflow or similar forums.
+  
+## Tips and Guides
+For more information on how to build your own track head over to these links:
+   - [https://amiga.farm-ng.com/docs/brain/brain-install/](https://amiga.farm-ng.com/docs/examples/track_planner/) 
+   - [https://amiga.farm-ng.com/docs/concepts/tracks_and_waypoints/](https://amiga.farm-ng.com/docs/concepts/tracks_and_waypoints/)
+
 
