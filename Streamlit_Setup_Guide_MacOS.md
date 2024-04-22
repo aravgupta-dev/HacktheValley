@@ -95,9 +95,9 @@ Python is essential for running Python-based applications like Streamlit.
    streamlit run streamlit.py
    ```
 3. Access the Streamlit application in your web browser at `http://localhost:8501`.
-4. To stop the app hit:
+4. To stop the app use:
    ```bash
-   control d
+   control+d
    ```
    in the terminal
 
