@@ -1,27 +1,8 @@
 
-# Brain ADK Installation
+# Streamlit Application download instructions
 
-## PyPI version
-
-### Install from pip [recommended]
-
-**TIP**  
-We strongly recommend running the brain SDK applications in a virtual environment to avoid conflicts with other packages / versions installed on your system. Though this is not a requirement and you are welcome to decide how/where to install.
 
 ## Setup environment
-
-If you want to install farm-ng-amiga in a virtual environment:
-
-### Install pip3 & virtualenv
-
-#### Linux
-#### MacOs
-```
-brew install python3
-# to check if the installation was successful input command
-pip --version
-sudo pip3 install virtualenv
-```
 
 ### Start a virtual environment
 
@@ -44,11 +25,6 @@ source venv/bin/activate # re-enter, assuming you're in the root
 
 Now install the package with pip
 
-**NOTICE**  
-Currently the farm-ng-core wheel must be built from source on MacOS. Please use the correct tab for your OS. For Amiga Brains, please follow the Linux instructions.
-
-#### Linux
-#### MacOs
 ```
 # Clone the farm-ng-core repo
 git clone https://github.com/farm-ng/farm-ng-core.git
@@ -106,12 +82,6 @@ git clone https://github.com/farm-ng/farm-ng-amiga.git
 cd farm-ng-amiga/
 ```
 
-**TIP**  
-If you want to clone with git instead of https:
-
-```
-git clone git@github.com:farm-ng/farm-ng-amiga.git
-```
 
 **NOTE:** This requires that you have an ssh key set up.
 See farm-ng Github 101 - Set up an SSH key for more information and instructions.
@@ -119,7 +89,7 @@ Keep the repo up-to-date with:
 
 ```
 # from farm-ng-amiga/ dir
-git checkout main
+git checkout track-planner-app
 git pull
 ```
 
@@ -132,7 +102,22 @@ Create and install the farm-ng-amiga Python package
 pip install --upgrade pip
 pip install --upgrade setuptools
 pip3 install .
+pip install streamlit
+pip install folium
+pip install nest_asyncio
+pip install geopy
+pip install streamlit_folium
 
-# or for development mode
-pip3 install -e .[dev]
+
 ```
+## Navigate and Run Streamlit App
+1. Navigate to the Streamlit application directory:`farm-ng-amiga`
+   ```bash
+   cd py/examples/track_planner/
+   ```
+2. Run the StreamLit Application:
+   ```bash
+   streamlit run streamlit.py
+   ```
+3. HAVE FUN! 
+   
