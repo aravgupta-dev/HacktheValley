@@ -43,7 +43,7 @@ Python is essential for running Python-based applications like Streamlit.
    ```
 3. Activate the virtual environment:
    ```cmd
-   .\venv\Scripts\activate
+   source venv/bin/activate
    ```
    Your command prompt should now show the virtual environment name.
 4. To deactivate the virtual environment, use:
@@ -67,15 +67,19 @@ Python is essential for running Python-based applications like Streamlit.
    ```
 
 ## Step 5: Run Streamlit Application
-1. Navigate to the Streamlit application directory within the repository:
+1. Install Streamlit
+   ```cmd
+   pip install streamlit
+   ```
+2. Navigate to the Streamlit application directory within the repository:
    ```cmd
    cd py\examples\track_planner\
    ```
-2. Run the Streamlit application:
+3. Run the Streamlit application:
    ```cmd
    streamlit run streamlit.py
    ```
-3. Access the Streamlit application in your web browser at `http://localhost:8501`.
+4. Access the Streamlit application in your web browser at `http://localhost:8501`.
 
 ## Troubleshooting
 - Ensure all commands are run within the virtual environment.
