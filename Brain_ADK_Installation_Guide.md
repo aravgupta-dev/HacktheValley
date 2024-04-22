@@ -1,5 +1,5 @@
 
-# Streamlit Application download instructions
+# Streamlit Application Download Instructions
 
 
 ## Setup environment
