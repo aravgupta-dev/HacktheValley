@@ -2,7 +2,7 @@
 # Streamlit Application Download Instructions
 
 
-## Setup environment
+## Setup a codespaces environment in Github! 
 
 ### Start a virtual environment
 
