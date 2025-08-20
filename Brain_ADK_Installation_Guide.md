@@ -121,3 +121,11 @@ pip install streamlit_folium
    ```
 3. HAVE FUN! 
    
+## Deploy tracks to robot
+1. Create a track in the Streamlit Application
+
+2. Move the track onto the Brain
+   ```bash
+   sudo mv /mnt/managed_home/<username>/<tracknam> /mnt/data/tracks/<trackname>
+
+3. Your track is now deployed and runnable from your robot!
