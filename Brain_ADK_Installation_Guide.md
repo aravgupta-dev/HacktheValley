@@ -122,6 +122,9 @@ pip install streamlit_folium
 3. HAVE FUN! 
    
 ## Deploy tracks to robot
+Prerequisites:
+- Ensure that you have successfully SSH'd into the robot (your terminal should display (venv) <username>@<robotname>)
+
 1. Create a track in the Streamlit Application
 
 2. Move the track onto the Brain
